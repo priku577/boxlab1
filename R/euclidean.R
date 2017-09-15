@@ -9,7 +9,7 @@
 #' @examples
 #' euclidean()
 #' d <- euclidean(x=100, y=1000)
-euclidean <- function(x, y)
+euclidean <- function(x=100, y=1000)
 {
   num1 <- x;
   num2 <- y;
