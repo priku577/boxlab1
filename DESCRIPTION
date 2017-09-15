@@ -1,11 +1,12 @@
-Package: euclideanbox
-Title: Euclidian algorithm from Boxi for lab3 (one line, title case)
+Package: boxlab1
+Title: Boxi for lab3
 Version: 0.1
 Authors@R: person("Boxi", "Zhang", role = c("aut","cre"),email = "bossyzhang@gmail.com")
 Maintainer: Boxi Zhang <bossyzhang@gmail.com>
-Description: Euclidian algorithm.
+Description: Boxi for lab3.
 Depends: R (>= 3.4.1)
 License: MIT
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
+Suggests: testthat
