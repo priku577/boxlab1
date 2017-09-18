@@ -6,7 +6,7 @@
 \title{wiki_graph}
 \format{An object of class \code{data.frame} with 18 rows and 3 columns.}
 \usage{
-data(wiki_graph)
+data("wiki_graph")
 }
 \description{
 wiki_graph
@@ -15,6 +15,9 @@ wiki_graph
   \item v2 numeric vector
   \item w numeric vector
 }
+}
+\examples{
+data(grav)
 }
 \references{
 \url{https://en.wikipedia.org/wiki/Graph}
