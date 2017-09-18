@@ -8,7 +8,7 @@
 #' euclidean()
 #' d <- euclidean(x=100, y=1000)
 euclidean <- function(x=100, y=1000)
-{
+{stopifnot(is.numeric(x) && is.numeric(y) || is.integer(x)  && is.integer(y))
   num1 <- x;
   num2 <- y;
   while(num2 != 0) {
