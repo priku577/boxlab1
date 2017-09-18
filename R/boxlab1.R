@@ -24,7 +24,7 @@ euclidean <- function(x, y)
 #' @title dijkstra algorithm.
 #' @description This function uses dijkstra algorithm to find the shortest connection.
 #' @references adapted from https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm .
-#' @param cost the data matrix.
+#' @param cost the data frame.
 #' @param v the start point.
 #' @export
 #' @examples
