@@ -6,7 +6,7 @@
 \title{wiki_graph}
 \format{An object of class \code{data.frame} with 18 rows and 3 columns.}
 \usage{
-wiki_graph
+data(wiki_graph)
 }
 \description{
 wiki_graph
