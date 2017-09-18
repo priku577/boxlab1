@@ -15,8 +15,7 @@ euclidean(x, y)
 This function uses dijkstra algorithm to find the shortest connection.
 }
 \examples{
-euclidean()
-d <- euclidean(x=100, y=1000)
+euclidean(x=100, y=1000)
 }
 \references{
 from https://en.wikipedia.org/wiki/Euclidean_algorithm .

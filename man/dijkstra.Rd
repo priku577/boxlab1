@@ -14,11 +14,6 @@ dijkstra(cost, v)
 \description{
 This function uses dijkstra algorithm to find the shortest connection.
 }
-\examples{
-data(wiki_graph)
-dijkstra()
-d <- dijkstra(cost=wiki_graph, v=1)
-}
 \references{
 adapted from https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm .
 }
