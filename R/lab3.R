@@ -32,7 +32,7 @@ euclidean <- function(x, y)
 #' d <- dijkstra(cost=wiki_graph, v=1)
 dijkstra<-function(cost, v)
 {
-  if(!all(colnames(cost)==c("v1","v2","w")&is.data.frame(cost))){stop()}else{
+  if(!all(colnames(cost)==c("v1","v2","w")&&is.data.frame(cost))){stop()}else{
     n=dist=length(table(cost[,"v1"]))
     prev<-numeric(n)
     flag<-numeric(n)
