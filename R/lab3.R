@@ -7,7 +7,7 @@
 #' @examples
 #' euclidean()
 #' d <- euclidean(x=100, y=1000)
-euclidean <- function(x=100, y=1000)
+euclidean <- function(x, y)
 {if(!is.numeric(x) || !is.numeric(y) || !(x%%1==0) || !(y%%1==0)){stop()}else{
   num1 <- x;
   num2 <- y;
@@ -32,11 +32,10 @@ euclidean <- function(x=100, y=1000)
 #' d <- dijkstra(cost=wiki_graph, v=1)
 dijkstra<-function(cost, v)
 {
-  dist<-numeric(n)
-  flag<- numeric(n)
-  prev<-numeric(n)
   if(!all(colnames(cost)==c("v1","v2","w")&is.data.frame(cost))){stop()}else{
     n=dist=length(table(cost[,"v1"]))
+    prev<-numeric(n)
+    flag<-numeric(n)
     new_cost<-matrix(nrow=n,ncol=n)
     for (i in 1:length(cost[,"v1"])){new_cost[cost[,"v1"][i],cost[,"v2"][i]]=cost[,"w"][i]}
     bi=sort(cost[,"w"])
