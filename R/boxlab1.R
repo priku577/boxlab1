@@ -26,9 +26,6 @@ euclidean <- function(x, y)
 #' @param cost the data frame.
 #' @param v the start point.
 #' @export
-#' @examples
-#' data(wiki_graph)
-#' dijkstra(cost=wiki_graph, v=1)
 dijkstra<-function(cost, v)
 {
   if(!is.data.frame(cost)&&!all(colnames(cost)==c("v1","v2","w"))){stop()}else{
