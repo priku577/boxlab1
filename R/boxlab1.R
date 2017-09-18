@@ -5,8 +5,7 @@
 #' @param y the second number.
 #' @export
 #' @examples
-#' euclidean()
-#' d <- euclidean(x=100, y=1000)
+#' euclidean(x=100, y=1000)
 euclidean <- function(x, y)
 {if(!is.numeric(x) || !is.numeric(y) || !(x%%1==0) || !(y%%1==0)){stop()}else{
   num1 <- x;
@@ -29,14 +28,14 @@ euclidean <- function(x, y)
 #' @export
 #' @examples
 #' data(wiki_graph)
-#' dijkstra()
-#' d <- dijkstra(cost=wiki_graph, v=1)
+#' dijkstra(cost=wiki_graph, v=1)
 dijkstra<-function(cost, v)
 {
   if(!is.data.frame(cost)&&!all(colnames(cost)==c("v1","v2","w"))){stop()}else{
     n=dist=length(table(cost[,"v1"]))
     prev<-numeric(n)
     flag<-numeric(n)
+    dist<-numeric(n)
     new_cost<-matrix(nrow=n,ncol=n)
     for (i in 1:length(cost[,"v1"])){new_cost[cost[,"v1"][i],cost[,"v2"][i]]=cost[,"w"][i]}
     bi=sort(cost[,"w"])
