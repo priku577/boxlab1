@@ -8,15 +8,15 @@
 #' euclidean()
 #' d <- euclidean(x=100, y=1000)
 euclidean <- function(x=100, y=1000)
-{stopifnot(is.numeric(x) && is.numeric(y) || is.integer(x)  && is.integer(y))
+{if(!is.numeric(x) || !is.numeric(y) || !(x%%1==0) || !(y%%1==0)){stop()}else{
   num1 <- x;
   num2 <- y;
-  while(num2 != 0) {
+  while (num2 != 0) {
     rem      = num1%%num2; 
     num1    = num2;       
-    num2    = rem;
-  }
+    num2    = rem;}
   return(num1)
+  }
 }
 
 
