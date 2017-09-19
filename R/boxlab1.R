@@ -1,3 +1,21 @@
+#' @title boxlab1: euclidean and dijkstra algorithm
+#' 
+#' @description conduct euclidean and dikstra algorithm for given input
+#' 
+#' @author Maintainer: Boxi Zhang bossyzhang@gmail.com
+#' 
+#' @references \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
+#' \url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
+#' 
+#' @docType package
+#' @name boxlab1
+NULL
+
+
+
+
+
+
 #' @title Euclidian algorithm.
 #' @description This function uses dijkstra algorithm to find the shortest connection.
 #' @references from https://en.wikipedia.org/wiki/Euclidean_algorithm .
