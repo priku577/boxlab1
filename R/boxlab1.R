@@ -46,7 +46,7 @@ euclidean <- function(x, y)
 #' @export
 dijkstra<-function(cost, v)
 {
-  if(!is.data.frame(cost)&&!all(colnames(cost)==c("v1","v2","w"))){stop()}else{
+  if(!is.data.frame(cost) || !all(colnames(cost) %in% c("v1","v2","w"))){stop()}else{
     n=dist=length(table(cost[,"v1"]))
     prev<-numeric(n)
     flag<-numeric(n)
