@@ -8,3 +8,6 @@ priku577@student.liu.se
 
 Boxi Zhang 
 bossyzhang@gmail.com
+
+
+This package contains the r code for solving the eculedian and dijkstra algorithms
